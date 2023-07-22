@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+
+    <script>
+
+        function UpdateName () {
+
+            document.getElementById('demo').innerHTML = '<h2>Hello JS</h2>';
+
+           
+        }
+
+        // function showalert() {
+
+        //     alert("Hi This is my laret");
+        // }
+
+
+        function calcute () {
+
+           let first_box_val =  document.getElementById("one").value;
+           let sec_box_val = document.getElementById("two").value;
+
+           let sum = parseInt(first_box_val) + parseInt(sec_box_val);
+
+           document.getElementById('total').innerHTML = sum;
+          
+          
+        }
+
+
+    </script>
+</head>
+<body>
+
+   <!-- <button onclick="showalert()">HTML 5 PUB 5</button>  -->
+
+    
+
+   <button onclick="UpdateName()">Change My Name</button>
+
+    My Name is <div id="demo">Amna</div>
+
+
+    <input type="text" value="" id="one" />
+    <input type="text" value="" id="two" />
+
+    <input type="submit" value="Calculte" onclick="calcute()" />
+
+    <div id="total"></div>
+    
+</body>
+</html>
