@@ -22,12 +22,12 @@
 
         function calcute () {
 
-           let first_box_val =  document.getElementById("one").value;
-           let sec_box_val = document.getElementById("two").value;
+           let a =  document.getElementById("one").value;
+           let b = document.getElementById("two").value;
 
-           let sum = parseInt(first_box_val) + parseInt(sec_box_val);
+          alert( parseInt(a) - parseInt(b) );
 
-           document.getElementById('total').innerHTML = sum;
+          // document.getElementById('total').innerHTML = sum;
           
           
         }
@@ -47,7 +47,7 @@
 
 
     <input type="text" value="15" id="one" />
-    <input type="text" value="20" id="two" />
+    <input type="text" value="16" id="two" />
 
     <input type="submit" value="Calculte" onclick="calcute()" />
 
