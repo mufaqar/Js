@@ -5,35 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
     <script>
 
         function UpdateName () {
-
-            document.getElementById('demo').innerHTML = '<h2>Hello JS</h2>';
-
-           
+            document.getElementById('demo').innerHTML = '<h2>Hello JS</h2>';   
         }
-
         // function showalert() {
 
         //     alert("Hi This is my laret");
         // }
 
 
-        function calcute () {
+        function calcute() {
 
-           let a =  document.getElementById("one").value;
-           let b = document.getElementById("two").value;
+        let a =  document.getElementById("one").value;
+        let b = document.getElementById("two").value;
 
-          alert( parseInt(a) - parseInt(b) );
+        alert( parseInt(a) - parseInt(b) );
 
-          // document.getElementById('total').innerHTML = sum;
-          
-          
+        // document.getElementById('total').innerHTML = sum;
+        
+        
         }
 
 
+        function changesize() {
+            document.getElementById("head2").classList.add("head2");
+
+        }
+
     </script>
+
+       
+
 </head>
 <body>
 
@@ -52,6 +58,9 @@
     <input type="submit" value="Calculte" onclick="calcute()" />
 
     <div id="total"></div>
+
+
+    <h2 onclick="changesize()" id="head2">This is heading 2</h2>
     
 </body>
 </html>
