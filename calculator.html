@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+
+    <script>
+      function Calculte() {
+        let a = document.getElementById("one").value;
+        let b = document.getElementById("two").value;
+        document.getElementById('total').innerHTML = sum;
+      }
+
+      function CalculteDiff() {
+        let a = document.getElementById("one").value;
+        let b = document.getElementById("two").value;
+        alert(parseInt(a) - parseInt(b));
+      }
+
+      function CalculteMulti() {
+        let a = document.getElementById("one").value;
+        let b = document.getElementById("two").value;
+        alert(parseInt(a) * parseInt(b));
+      }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+<div>
+    <input type="text" value="5" id="one" />
+    <input type="submit" value="sum" onClick="Calculte()" />
+    <input type="text" value="5" id="two" />
+    <div class="total"></div>
+</div>
+
+
+<div>
+    <input type="text" value="10" id="three" />
+    <input type="text" value="5" id="four" />
+    <input type="submit" value="Difference" onClick="CalculteDiff()" />
+</div>
+
+
+<div>
+    <input type="text" value="" id="five" />
+    <input type="text" value="" id="six" />
+    <input type="submit" value="Product" onClick="CalculteMulti()" />
+</div>
+
+
+
+
+  </body>
+</html>
