@@ -9,18 +9,18 @@
       function Calculte() {
         let a = document.getElementById("one").value;
         let b = document.getElementById("two").value;
-        document.getElementById('total').innerHTML = sum;
+        alert(parseInt(a) + parseInt(b))
       }
 
       function CalculteDiff() {
-        let a = document.getElementById("one").value;
-        let b = document.getElementById("two").value;
+        let a = document.getElementById("three").value;
+        let b = document.getElementById("four").value;
         alert(parseInt(a) - parseInt(b));
       }
 
       function CalculteMulti() {
-        let a = document.getElementById("one").value;
-        let b = document.getElementById("two").value;
+        let a = document.getElementById("five").value;
+        let b = document.getElementById("six").value;
         alert(parseInt(a) * parseInt(b));
       }
 
@@ -39,26 +39,26 @@
   <body>
 <div>
     <input type="text" value="5" id="one" />
-    <input type="submit" value="sum" onClick="Calculte()" />
     <input type="text" value="5" id="two" />
+    <input type="submit" value="sum" onClick="Calculte()" />
     <div class="total"></div>
 </div>
-
+<hr>
 
 <div>
     <input type="text" value="10" id="three" />
     <input type="text" value="5" id="four" />
     <input type="submit" value="Difference" onClick="CalculteDiff()" />
 </div>
-
+<hr>
 
 <div>
-    <input type="text" value="" id="five" />
-    <input type="text" value="" id="six" />
+    <input type="text" value="8" id="five" />
+    <input type="text" value="4" id="six" />
     <input type="submit" value="Product" onClick="CalculteMulti()" />
 </div>
 
-
+<hr>
 
 
   </body>
