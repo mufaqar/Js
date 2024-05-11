@@ -1,1 +1,0 @@
-var cname= 6;
